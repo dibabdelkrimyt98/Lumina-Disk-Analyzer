@@ -1,0 +1,37 @@
+import tailwindcss from "@tailwindcss/postcss"; // Bien importé !
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
+
+// @ts-expect-error process is a nodejs global
+const host = process.env.TAURI_DEV_HOST;
+
+// https://vite.dev/config/
+export default defineConfig(async () => ({
+  plugins: [react()],
+
+  // --- AJOUT DE LA CONFIGURATION CSS ICI ---
+  css: {
+    postcss: {
+      plugins: [tailwindcss()], // On active le plugin ici
+    },
+  },
+  // ------------------------------------------
+
+  // Vite options tailored for Tauri development
+  clearScreen: false,
+  server: {
+    port: 1420,
+    strictPort: true,
+    host: host || false,
+    hmr: host
+      ? {
+          protocol: "ws",
+          host,
+          port: 1421,
+        }
+      : undefined,
+    watch: {
+      ignored: ["**/src-tauri/**"],
+    },
+  },
+}));

@@ -1,0 +1,5 @@
+lumina-app/src-tauri/audit_report.csv 
+lumina-app/src-tauri/audit_report.json 
+lumina-app/src-tauri/*.csv 
+lumina-app/src-tauri/*.json 
+target/ 

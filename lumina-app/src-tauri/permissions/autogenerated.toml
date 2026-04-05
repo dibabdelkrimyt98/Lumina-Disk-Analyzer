@@ -1,0 +1,15 @@
+[[permission]]
+identifier = "allow-lumina-commands" # Doit être identique au JSON
+description = "Autorise les commandes de LuminaScan"
+
+# C'est ici qu'il faut ajouter .allow
+[[permission]]
+identifier = "allow-lumina-commands"
+description = "Autorise les commandes de LuminaScan"
+
+# Remplacer la notation à point par une table en ligne
+commands = { allow = [
+    "run_lumina_scan",
+    "clear_recycle_bin",
+    "clear_temp_cache"
+] }
