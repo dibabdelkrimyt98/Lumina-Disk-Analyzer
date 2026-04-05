@@ -165,7 +165,7 @@ function App() {
                   <h3 className="text-sm font-bold text-slate-300 uppercase tracking-widest mb-6 shrink-0">Top Catégories</h3>
                   
                   <div className="flex-1 flex flex-col justify-between gap-2 overflow-hidden">
-                    {stats.categories.slice(0, 6).map((cat: any, index: number) => (
+                    {stats.categories.slice(0, 6).map((cat: any) => (
                       <div key={cat.name} className="flex flex-col justify-center">
                         <div className="flex justify-between text-xs mb-2 font-semibold">
                           <span className="text-slate-200 flex items-center gap-2">
