@@ -28,6 +28,28 @@ Suivi précis de la progression et retour visuel sur l'état du système.
 
 ---
 
+## 📥 Téléchargement & Installation
+
+Choisissez le format qui vous convient le mieux dans la section [Releases](https://github.com/[votre-pseudo]/LuminaScan/releases) de ce dépôt :
+
+| Format | Description | Usage Idéal |
+| :--- | :--- | :--- |
+| **.MSI (Recommandé)** | Installeur Windows standard. Gère proprement les raccourcis et la désinstallation. | Installation fixe sur votre PC. |
+| **.EXE (Portable)** | Exécutable direct sans installation. | Test rapide ou utilisation depuis une clé USB. |
+
+> **Note de sécurité Windows :** LuminaScan étant un projet indépendant et open source, il ne possède pas de certificat commercial payant. Au premier lancement, Windows SmartScreen peut afficher une alerte. Cliquez simplement sur *Informations complémentaires* puis *Exécuter quand même*.
+
+---
+
+## 🔒 Sécurité & Confidentialité
+
+LuminaScan a été conçu avec la protection de la vie privée comme priorité absolue :
+* **100% Local :** L'application fonctionne entièrement hors-ligne. Aucune donnée, statistique ou historique d'analyse n'est envoyé sur des serveurs externes.
+* **Transparence totale :** Le code source est entièrement public, permettant à quiconque d'auditer les opérations effectuées sur le système.
+* **Respect du système :** Les opérations de maintenance utilisent exclusivement les API officielles de Windows.
+
+---
+
 ## 🛠 Stack Technique
 
 * **Core :** [Rust](https://www.rust-lang.org/) (Performance & Sécurité mémoire)
@@ -37,16 +59,16 @@ Suivi précis de la progression et retour visuel sur l'état du système.
 
 ---
 
-## 🚀 Installation & Développement
+## 💻 Pour les Développeurs (Setup)
 
 ### Prérequis
 * Node.js (LTS)
 * Rust (dernière version stable)
 
-### Setup rapide
+### Démarrage rapide
 1.  **Cloner le projet :**
     ```bash
-    git clone [https://github.com/[votre-pseudo]/LuminaScan.git](https://github.com/[votre-pseudo]/LuminaScan.git)
+    git clone [https://github.com/](https://github.com/)[votre-pseudo]/LuminaScan.git
     ```
 2.  **Installer les dépendances :**
     ```bash
